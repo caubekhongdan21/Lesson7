@@ -1,0 +1,883 @@
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 0 16px 4px rgba(204, 204, 204, 0.4);
+  padding: 34px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+header .container .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .wrapper a.navbar-brand {
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: bold;
+}
+header .container .wrapper a.navbar-brand span {
+  margin-left: 10px;
+  font-family: "Hind", sans-serif;
+}
+header .container .wrapper nav > ul {
+  display: flex;
+  list-style: none;
+}
+header .container .wrapper nav > ul > li {
+  margin-left: 20px;
+  position: relative;
+}
+header .container .wrapper nav > ul > li:hover ul.dropdown {
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+}
+header .container .wrapper nav > ul > li:first-child {
+  margin-left: 0;
+}
+header .container .wrapper nav > ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 28px;
+  color: #718096;
+}
+header .container .wrapper nav > ul > li > a:hover {
+  color: #5a67d8;
+}
+header .container .wrapper nav > ul > li ul.dropdown {
+  transition: all 0.4s;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  padding: 5px;
+  border-radius: 8px;
+  background: white;
+  width: 210px;
+  box-shadow: 0 0 16px 4px rgba(204, 204, 204, 0.4);
+}
+header .container .wrapper nav > ul > li ul.dropdown li {
+  list-style: none;
+}
+header .container .wrapper nav > ul > li ul.dropdown li a {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  line-height: 28px;
+  padding: 3px 15px;
+  text-decoration: none;
+  color: #718096;
+}
+header .container .wrapper nav > ul > li ul.dropdown li a:hover {
+  color: #5a67d8;
+}
+header .container form {
+  position: absolute;
+  top: 20px;
+  left: 450px;
+}
+header .container form .form-group {
+  position: relative;
+}
+header .container form .form-group i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+header .container form .form-group input {
+  padding: 15px 55px;
+  border-radius: 4px;
+  width: 400px;
+  background-color: #f4f4f4;
+  font-size: 17px;
+  font-weight: 400;
+  color: #718096;
+}
+
+section.beauty {
+  background-color: #f4f4f4;
+  position: relative;
+  height: 815px;
+  margin-top: 90px;
+}
+section.beauty .container ul {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 70px;
+}
+section.beauty .container ul li {
+  list-style: none;
+  position: relative;
+}
+section.beauty .container ul li a {
+  text-decoration: none;
+  background-color: white;
+  display: block;
+  width: 280px;
+  padding-top: 65px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Hind", sans-serif;
+  color: #718096;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s;
+}
+section.beauty .container ul li a:hover {
+  transform: translateY(-5px);
+  color: #5a67d8;
+  box-shadow: 0 0 16px 4px rgba(204, 204, 204, 0.4);
+}
+section.beauty .container ul li i {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  color: #5a67d8;
+}
+section.beauty .container a.featured {
+  text-decoration: none;
+  color: #5a67d8;
+  background: rgba(90, 103, 216, 0.05);
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+  position: absolute;
+  top: 365px;
+  opacity: 0.9;
+}
+section.beauty .container a.featured:hover {
+  opacity: 1;
+}
+section.beauty .container a.create h3 {
+  position: absolute;
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 600;
+  max-width: 730px;
+  top: 430px;
+  color: #2d3748;
+  font-family: "Libre Baskerville", serif;
+}
+section.beauty .container a.img_link img {
+  position: absolute;
+  width: 370px;
+  height: 460px;
+  top: 260px;
+  left: 890px;
+  border-radius: 15px;
+}
+
+section.top_picks {
+  height: 715px;
+}
+section.top_picks .container h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  padding-top: 100px;
+}
+section.top_picks .container div.top_pick {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+section.top_picks .container div.top_pick div {
+  border: 1px soild black;
+  width: 370px;
+  height: 460px;
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.3s;
+}
+section.top_picks .container div.top_pick div:hover {
+  transform: translateY(-5px);
+}
+section.top_picks .container div.top_pick div img.first_img {
+  filter: brightness(0.4);
+  border-radius: 15px;
+}
+section.top_picks .container div.top_pick div a {
+  color: white;
+  text-decoration: none;
+  font-family: "Hind", sans-serif;
+}
+section.top_picks .container div.top_pick div a.title {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: 700;
+  position: absolute;
+  top: 270px;
+  left: 20px;
+}
+section.top_picks .container div.top_pick div a.logo {
+  position: absolute;
+  top: 380px;
+  left: 20px;
+}
+section.top_picks .container div.top_pick div a.logo img {
+  border-radius: 50%;
+}
+section.top_picks .container div.top_pick div a.w3layout {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  position: absolute;
+  top: 388px;
+  left: 90px;
+}
+section.top_picks .container div.top_pick div span {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #eee;
+}
+section.top_picks .container div.top_pick div span.february {
+  position: absolute;
+  top: 418px;
+  left: 90px;
+}
+section.top_picks .container div.top_pick div span.am {
+  position: absolute;
+  top: 418px;
+  left: 225px;
+}
+
+section.Editor_Picks {
+  background-color: #abb8c3;
+  position: relative;
+  height: 2076px;
+}
+section.Editor_Picks .container h3 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: "Hind", sans-serif;
+  color: #2d3748;
+  padding-top: 95px;
+  margin-bottom: 25px;
+}
+section.Editor_Picks .container div.Editor_Pick {
+  width: 770px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section.Editor_Picks .container div.Editor_Pick div {
+  width: 370px;
+  height: 485px;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  transition: all 0.3s;
+}
+section.Editor_Picks .container div.Editor_Pick div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 2px 2px 2px rgb(182, 178, 178);
+}
+section.Editor_Picks .container div.Editor_Pick div img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+section.Editor_Picks .container div.Editor_Pick div a {
+  text-decoration: none;
+  color: #2d3748;
+}
+section.Editor_Picks .container div.Editor_Pick div a.fashion_styles {
+  color: #5a67d8;
+  margin-left: 27px;
+  margin-top: 25px;
+  display: inline-block;
+  background-color: rgba(90, 103, 216, 0.05);
+  padding: 6px 20px;
+  border-radius: 600px;
+  opacity: 0.9;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+}
+section.Editor_Picks .container div.Editor_Pick div a.fashion_styles:hover {
+  opacity: 1;
+}
+section.Editor_Picks .container div.Editor_Pick div a.title {
+  position: absolute;
+  top: 330px;
+  left: 27px;
+  font-size: 1.35rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: "Hind", sans-serif;
+}
+section.Editor_Picks .container div.Editor_Pick div a.title:hover {
+  color: #5a67d8;
+}
+section.Editor_Picks .container div.Editor_Pick div a.logo {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+}
+section.Editor_Picks .container div.Editor_Pick div a.logo img {
+  border-radius: 50%;
+}
+section.Editor_Picks .container div.Editor_Pick div a.w3layout {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  position: absolute;
+  top: 395px;
+  left: 90px;
+}
+section.Editor_Picks .container div.Editor_Pick div span {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #abb8c3;
+}
+section.Editor_Picks .container div.Editor_Pick div span.february {
+  position: absolute;
+  top: 430px;
+  left: 90px;
+}
+section.Editor_Picks .container div.Editor_Pick div span.am {
+  position: absolute;
+  top: 430px;
+  left: 225px;
+}
+section.Editor_Picks .container div.Editor_Pick div.fashion {
+  margin-top: 25px;
+}
+section.Editor_Picks .container div.topics {
+  position: absolute;
+  top: 102px;
+  left: 867px;
+}
+section.Editor_Picks .container div.topics h4 {
+  color: #2d3748;
+  font-size: 33px;
+  line-height: 36px;
+  font-weight: 700;
+}
+section.Editor_Picks .container div.topics ul.topic li a {
+  display: inline-block;
+  color: #718096;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  font-family: "Hind", sans-serif;
+  background-color: #fff;
+  padding: 15px 20px;
+  width: 370px;
+  margin-top: 18px;
+  border-radius: 15px;
+}
+section.Editor_Picks .container div.Oursponsers {
+  position: absolute;
+  top: 610px;
+  left: 867px;
+}
+section.Editor_Picks .container div.Oursponsers img {
+  border-radius: 15px;
+}
+section.Editor_Picks .container div.Oursponsers a {
+  color: #718096;
+  margin-top: 2px;
+  margin-left: 120px;
+  font-size: 17px;
+  font-family: "Hind", sans-serif;
+}
+section.Editor_Picks .container div.Oursponsers a:hover {
+  color: blue;
+}
+section.Editor_Picks .container div.advertise {
+  position: relative;
+  margin-top: 22px;
+  background: #fff;
+  width: 770px;
+  height: 80px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+section.Editor_Picks .container div.advertise h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: "Libre Baskerville", serif;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+section.Editor_Picks .container div.advertise a {
+  position: absolute;
+  top: 14px;
+  left: 600px;
+  background-color: blue;
+  padding: 12px 26px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #5a67d8;
+  border-radius: 6px;
+}
+section.Editor_Picks .container div.fashion1 {
+  position: relative;
+  margin-top: 120px;
+}
+section.Editor_Picks .container div.fashion1 a {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  background: #e2e8f0;
+  border-radius: 15px;
+  color: #718096;
+  padding: 6px 20px;
+  transition: all 0.3s;
+  position: absolute;
+  top: 100px;
+  left: 1068px;
+}
+section.Editor_Picks .container div.fashion1 a:hover {
+  color: #fff;
+  background-color: #5a67d8;
+}
+section.Editor_Picks .container div.fashion2 {
+  display: flex;
+  justify-content: space-between;
+}
+section.Editor_Picks .container div.fashion2 div {
+  width: 370px;
+  height: 445px;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  transition: all 0.3s;
+}
+section.Editor_Picks .container div.fashion2 div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 2px 2px 2px rgb(182, 178, 178);
+}
+section.Editor_Picks .container div.fashion2 div img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+section.Editor_Picks .container div.fashion2 div a {
+  text-decoration: none;
+  color: #2d3748;
+}
+section.Editor_Picks .container div.fashion2 div a.title {
+  position: absolute;
+  top: 290px;
+  left: 27px;
+  font-size: 1.35rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: "Hind", sans-serif;
+}
+section.Editor_Picks .container div.fashion2 div a.title:hover {
+  color: #5a67d8;
+}
+section.Editor_Picks .container div.fashion2 div a.logo {
+  position: absolute;
+  top: 365px;
+  left: 20px;
+}
+section.Editor_Picks .container div.fashion2 div a.logo img {
+  border-radius: 50%;
+}
+section.Editor_Picks .container div.fashion2 div a.w3layout {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  position: absolute;
+  top: 365px;
+  left: 90px;
+}
+section.Editor_Picks .container div.fashion2 div span {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #abb8c3;
+}
+section.Editor_Picks .container div.fashion2 div span.february {
+  position: absolute;
+  top: 395px;
+  left: 90px;
+}
+section.Editor_Picks .container div.fashion2 div span.am {
+  position: absolute;
+  top: 395px;
+  left: 225px;
+}
+section.Editor_Picks .container div.fashion2 div.fashion {
+  margin-top: 25px;
+}
+
+section.Beautys {
+  background-color: #f4f4f4;
+  padding-bottom: 95px;
+  padding-top: 110px;
+}
+section.Beautys .container h3 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 35px;
+}
+section.Beautys .container div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section.Beautys .container div div.beauty {
+  height: 300px;
+  width: 570px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s;
+}
+section.Beautys .container div div.beauty:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 2px 2px rgb(182, 178, 178);
+}
+section.Beautys .container div div.beauty a.title {
+  position: absolute;
+  top: 92px;
+  left: 247px;
+  font-size: 1.3rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: "Hind", sans-serif;
+}
+section.Beautys .container div div.beauty a.title:hover {
+  color: #5a67d8;
+}
+section.Beautys .container div div.beauty a {
+  color: #2d3748;
+}
+section.Beautys .container div div.beauty a.logo {
+  position: absolute;
+  top: 160px;
+  left: 247px;
+}
+section.Beautys .container div div.beauty a.w3layout {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  position: absolute;
+  top: 157px;
+  left: 312px;
+}
+section.Beautys .container div div.beauty span {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #abb8c3;
+}
+section.Beautys .container div div.beauty span.january {
+  position: absolute;
+  top: 190px;
+  left: 312px;
+}
+section.Beautys .container div div.beauty span.pm {
+  position: absolute;
+  left: 435px;
+  top: 190px;
+}
+section.Beautys .container div div.beauty img {
+  border-radius: 15px;
+}
+section.Beautys .container div div.beauty1 {
+  margin-top: 25px;
+}
+
+section.trendings {
+  padding-top: 105px;
+  background-color: #f8f9fa;
+  margin-bottom: 95px;
+}
+section.trendings .container h3 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 27px;
+}
+section.trendings .container div {
+  display: flex;
+  justify-content: space-between;
+}
+section.trendings .container div div.trending {
+  height: 300px;
+  width: 570px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s;
+}
+section.trendings .container div div.trending:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 2px 2px rgb(182, 178, 178);
+}
+section.trendings .container div div.trending a.lifestyle {
+  position: absolute;
+  top: 62px;
+  left: 246px;
+  color: #5a67d8;
+  display: inline-block;
+  background-color: rgba(90, 103, 216, 0.05);
+  padding: 6px 20px;
+  border-radius: 600px;
+  opacity: 0.9;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+}
+section.trendings .container div div.trending a.lifestyle:hover {
+  opacity: 1;
+}
+section.trendings .container div div.trending a.title {
+  position: absolute;
+  top: 110px;
+  left: 246px;
+  font-size: 1.3rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: "Hind", sans-serif;
+}
+section.trendings .container div div.trending a.title:hover {
+  color: #5a67d8;
+}
+section.trendings .container div div.trending a {
+  color: #2d3748;
+}
+section.trendings .container div div.trending a.logo {
+  position: absolute;
+  top: 182px;
+  left: 247px;
+}
+section.trendings .container div div.trending a.w3layout {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  position: absolute;
+  top: 182px;
+  left: 312px;
+}
+section.trendings .container div div.trending span {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #abb8c3;
+}
+section.trendings .container div div.trending span.february {
+  position: absolute;
+  top: 210px;
+  left: 312px;
+}
+section.trendings .container div div.trending span.pm {
+  position: absolute;
+  left: 435px;
+  top: 210px;
+}
+section.trendings .container div div.trending img {
+  border-radius: 15px;
+}
+
+section.subscribes {
+  background-color: #f4f4f4;
+  height: 558px;
+  position: relative;
+}
+section.subscribes .container {
+  background-color: white;
+  height: 365px;
+  position: absolute;
+  top: 100px;
+  left: 61px;
+  border-radius: 15px;
+}
+section.subscribes .container .subscribe h3 {
+  position: absolute;
+  top: 95px;
+  left: 400px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: "Libre Baskerville", serif;
+}
+section.subscribes .container .subscribe p {
+  font-size: 19px;
+  line-height: 28px;
+  color: #718096;
+  position: absolute;
+  top: 138px;
+  left: 332px;
+}
+section.subscribes .container .subscribe form {
+  position: absolute;
+  top: 217px;
+  left: 318px;
+}
+section.subscribes .container .subscribe form .form-group input {
+  padding: 15px 20px;
+  border-radius: 4px;
+  width: 400px;
+  background-color: #f4f4f4;
+  font-size: 17px;
+  font-weight: 400;
+  color: #718096;
+}
+section.subscribes .container .subscribe button {
+  position: absolute;
+  top: 217px;
+  left: 720px;
+  padding: 12px 35px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #5a67d8;
+  border-color: #5a67d8;
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+section.subscribes .container .subscribe button:hover {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 70px;
+  position: relative;
+  height: 396px;
+}
+footer .container div.logo a.navbar-brand {
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: bold;
+}
+footer .container div.logo a.navbar-brand span {
+  margin-left: 10px;
+  font-family: "Hind", sans-serif;
+}
+footer .container div.logo p {
+  margin-top: 20px;
+  color: #718096;
+  font-size: 18px;
+  line-height: 28px;
+}
+footer .container div.logo h5 {
+  margin-top: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Libre Baskerville", serif;
+  color: #2d3748;
+  font-size: 1.25rem;
+}
+footer .container div.logo h5 a {
+  color: #5a67d8;
+}
+footer .container div.logo h5 a:hover {
+  color: #007bff;
+}
+footer .container div.recent {
+  position: absolute;
+  top: 0;
+  left: 467px;
+}
+footer .container div.recent h6 {
+  font-size: 26px;
+  font-family: "Libre Baskerville", serif;
+  color: #2d3748;
+}
+footer .container div.recent ul {
+  margin-top: 20px;
+}
+footer .container div.recent ul li {
+  font-family: "Hind", sans-serif;
+  color: #718096;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 17px;
+}
+footer .container div.recent ul li a {
+  color: #718096;
+}
+footer .container div.recent ul li a:hover {
+  color: black;
+}
+footer .container div.recent ul li span {
+  font-size: 80%;
+  font-family: "Hind", sans-serif;
+}
+footer .container div.categories {
+  position: absolute;
+  top: 0;
+  left: 724px;
+}
+footer .container div.categories h6 {
+  font-size: 26px;
+  font-family: "Libre Baskerville", serif;
+  color: #2d3748;
+}
+footer .container div.categories ul {
+  margin-top: 20px;
+}
+footer .container div.categories ul li {
+  font-family: "Hind", sans-serif;
+  color: #718096;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+footer .container div.categories ul li a {
+  color: #718096;
+}
+footer .container div.categories ul li a:hover {
+  color: black;
+}
+footer .container div.socialmedia {
+  position: absolute;
+  top: 0;
+  left: 980px;
+}
+footer .container div.socialmedia h6 {
+  font-size: 26px;
+  font-family: "Libre Baskerville", serif;
+  color: #2d3748;
+}
+footer .container div.socialmedia ul {
+  margin-top: 20px;
+}
+footer .container div.socialmedia ul li {
+  font-family: "Hind", sans-serif;
+  color: #718096;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+footer .container div.socialmedia ul li a {
+  color: #718096;
+}
+footer .container div.socialmedia ul li a:hover {
+  color: black;
+}/*# sourceMappingURL=firstScss.css.map */
